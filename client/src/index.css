@@ -1,0 +1,75 @@
+Header CSS
+
+/* Header.css */
+
+#mu-header {
+    background-color: #5ca4fd;  /* dark background color */
+    padding: 20px 0;         /* space on top and bottom */
+    color: #fff;             /* white text */
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .mu-header-area {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .mu-header-top-left,
+  .mu-header-top-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mu-top-email,
+  .mu-top-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .mu-top-email i,
+  .mu-top-phone i {
+    margin-right: 5px;
+  }
+  
+  .mu-top-social-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .mu-top-social-nav li {
+    margin-left: 10px;
+  }
+  
+  .mu-top-social-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .mu-header-area {
+      flex-direction: column;
+      text-align: center;
+    }
+    .mu-header-top-left,
+    .mu-header-top-right {
+      margin-bottom: 10px;
+    }
+  }
+  
