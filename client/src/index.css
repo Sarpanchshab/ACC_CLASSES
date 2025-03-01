@@ -1,75 +1,81 @@
-Header CSS
+/********** Template CSS **********/
+:root {
+  --primary: #F3BD00;
+  --secondary: #757575;
+  --light: #F3F6F8;
+  --dark: #0C2B4B;
+  -light: #F3F6F8;
+}
 
-/* Header.css */
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 45px;
+  bottom: 45px;
+  z-index: 99;
+}
 
-#mu-header {
-    background-color: #5ca4fd;  /* dark background color */
-    padding: 20px 0;         /* space on top and bottom */
-    color: #fff;             /* white text */
-    font-family: Arial, sans-serif;
-  }
-  
-  .container {
-    width: 90%;
-    margin: 0 auto;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .mu-header-area {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .mu-header-top-left,
-  .mu-header-top-right {
-    display: flex;
-    align-items: center;
-  }
-  
-  .mu-top-email,
-  .mu-top-phone {
-    display: flex;
-    align-items: center;
-    margin-right: 15px;
-  }
-  
-  .mu-top-email i,
-  .mu-top-phone i {
-    margin-right: 5px;
-  }
-  
-  .mu-top-social-nav {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .mu-top-social-nav li {
-    margin-left: 10px;
-  }
-  
-  .mu-top-social-nav a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 16px;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .mu-header-area {
-      flex-direction: column;
-      text-align: center;
-    }
-    .mu-header-top-left,
-    .mu-header-top-right {
-      margin-bottom: 10px;
-    }
-  }
-  
+i{
+ padding-right: 5px;
+ font-size: 20px;
+ color: white;
+}
+
+p{
+  color: white;
+}
+
+h4{
+  color: white;
+}
+
+h6{
+  color: white
+}
+
+/*** Footer ***/
+.footer{
+  background-color:#0C2B4B
+}
+/*** Footer ***/
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: var(--light);
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--light);
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  color: var(--primary);
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.copyright {
+  background: hsl(211, 32%, 41%);
+}
+
+.copyright a {
+  color: var(--primary);
+}
+
+.copyright a:hover {
+  color: var(--light);
+}
+
+p{
+  text:var(--light);
+}
